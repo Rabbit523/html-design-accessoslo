@@ -1,0 +1,37 @@
+.accessoslo-airport-limousine{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        min-height: 25px;
+        &.booking-id{
+            width: 9%;
+        }
+        &.date{
+            width: 8%;
+        }
+        &.contact{
+            width: 15%;
+        }
+        &.from-address{
+            width: 16%;
+        }
+        &.to-address{
+            width: 16%;
+        }
+        &.type-car{
+            width: 15%;
+        }
+        &.status{
+            width: 11%;
+			text-align: center;
+        }
+        &.toggle{
+            text-align: right;
+            width: 10%;
+        }
+    }
+}

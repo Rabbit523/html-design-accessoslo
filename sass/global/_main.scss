@@ -1,0 +1,21 @@
+@import "typography";
+@import "colors";
+@import "mixins";
+@import "functions";
+@import "btns";
+@import "general";
+@import "variables";
+@import "modal";
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: #f8f6f0;
+    font-size: 16px;
+    font-family: 'Gotham';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #5f6062;
+    @import "bootstrap";
+}

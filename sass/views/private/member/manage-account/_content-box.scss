@@ -1,0 +1,63 @@
+.content-box{
+    display: block;
+    margin: 0px 0px 0px;
+    padding-bottom: 50px;
+	background: #f8f6f0;
+    .box-left{
+        h3{
+            &:after{
+                width: 108%;
+            }
+        }
+    }
+    h2{
+        @include title(#333333,28);
+    }
+    h3{
+        @include title($yellow, 20);
+        margin-bottom: 40px;
+        &:after{
+            content: "";
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            height: 1px;
+            background: #dedad2;
+        }
+    }
+    p{
+        @include title(#333333, 12);
+    }
+    form{
+        margin-top: 40px;
+        label{
+            @include title(#333333, 12);
+            margin-top: 15px;
+        }
+        select {
+            background-image: url('../assets/img/arrow-select-only.jpg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: auto 100%;
+        }
+		.form-group {
+			position: relative;
+			&.success:after, &.error:after {				
+				top: 12px!important;		
+				right: 6px!important;
+			}
+			.form-control {
+				@include placeholderColor(#333333);
+				background-color: #FFF;
+				font-size: 14px;
+				color: #333333;
+				padding: 7px 10px;
+				height: auto;
+			}
+		}        
+        .btn{
+            padding: 10px 12px;
+            margin-top: 15px;
+        }
+    }
+}

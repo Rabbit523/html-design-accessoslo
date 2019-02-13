@@ -1,0 +1,82 @@
+.form-group {
+    .form-control {
+        @include placeholderColor(#b2b2b2);
+        border-radius: 0px;
+        border-color: #e0e0e0;
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        line-height: 28px;
+        color: #5f6062;
+        box-shadow: none;
+    }	
+    &.error{
+        .form-control {
+            border: solid 1px #e21717;                      
+            background-repeat: no-repeat;
+            background-position: 95% center;
+        }
+    }
+	&.success:after, &.error:after {
+		font: normal normal normal 14px/1 FontAwesome;
+		display: block;
+		position: absolute;
+		top: 8px;
+		right: 3px;
+		z-index: 8;
+		font-size: 20px;
+		color: #29d420;
+	}
+	&.error:after {
+		 content: "\f05c";
+		 color: #e71f1f;
+	}
+    &.success {
+        .form-control {
+            border: solid 1px $green;         
+            background-repeat: no-repeat;
+            background-position: 95% center;
+        }
+    }
+	&.success:after {
+		content: "\f05d";
+		color: #29d420;		
+	}	
+}
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+}
+.alert-box {
+    font-family: 'Gotham';
+    font-size: 18px;
+    color: #999999;
+    line-height: 1;
+    margin-top: 0px;
+    @include breakpoint(mobile) {
+        margin-top: 30px;
+    }
+    b {
+        font-weight: 900;
+        font-size: 24px;
+    }
+    .success {
+        color: $green;
+    }
+    .error{
+        color: #e21717;
+    }
+}
+.none-padding-left{
+    padding-left: 0px;
+}
+.btn {
+    outline: none;
+    &:focus, &:hover {
+        outline: none;
+    }
+}
+textarea {
+    resize: none;
+}

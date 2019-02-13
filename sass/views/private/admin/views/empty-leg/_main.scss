@@ -1,0 +1,35 @@
+.accessoslo-empty-leg{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        &.partner{
+            width: 22%;
+        }
+        &.flight{
+            width: 10%;
+        }
+        &.from-airport{
+            width: 17%;
+        }
+        &.to-airport{
+            width: 17%;
+        }
+        &.end-date{
+            width: 10%;
+        }
+        &.end-time{
+            width: 8%;
+        }
+        &.aircraft{
+            width: 10%;
+        }
+        &.seats{
+            width: 6%;
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.accessoslo-emptyleg-charter{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        &.company{
+            width: 18%;
+        }
+        &.phone{
+            width: 18%;           
+        }
+        &.email{
+            width: 21%;
+        }
+        &.contact{
+            width: 18%;
+        }
+        &.gender{
+            width: 10%;
+        }
+		&.status {
+			width: 15%;
+			text-align: center;
+		}		
+        
+    }
+}

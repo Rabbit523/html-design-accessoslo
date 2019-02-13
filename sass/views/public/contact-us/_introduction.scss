@@ -1,0 +1,51 @@
+.introduction {
+    display: block;
+    margin: 50px 0px 50px;
+    padding: 0px;
+    width: 100%;
+    .box{
+        @include shadowBox;
+        display: block;
+        background: #FFF;
+        padding: 50px 9px 40px;
+        position: relative;
+        @include breakpoint(md_pc){
+            padding: 30px 25px 20px;
+        }
+        @include breakpoint(sm_pc){
+            padding: 10px;
+        }
+        h1{
+            text-transform: uppercase;
+            color: $purple;
+            margin: 0px 0px 20px 0px;
+            font-family: 'Gotham-book';
+            font-size: 35px;
+            @include breakpoint(md_pc){
+                font-size: 30px;
+            }
+            @include breakpoint(md_pc){
+                font-size: 30px;
+            }
+            span {
+                color: $yellow;
+            }
+        }
+        .share {
+            color: $yellow;
+            position: absolute;
+            bottom: 40px;
+            left: 45px;
+            @include breakpoint(mobile){
+                position: relative;
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+    }
+    #map {
+        width: 100%;
+        height: 400px;
+        background-color: grey;
+    }
+}

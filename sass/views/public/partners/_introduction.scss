@@ -1,0 +1,55 @@
+.introduction {
+    display: block;
+    margin: 50px 0px 50px;
+    padding: 0px;
+    width: 100%;
+    .box{
+        @include shadowBox;
+        display: block;
+        background: #FFF;
+        padding: 50px 45px 40px;
+        position: relative;
+        @include breakpoint(md_pc){
+            padding: 30px 25px 20px;
+        }
+        @include breakpoint(sm_pc){
+            padding: 10px;
+        }
+        h1{
+            text-transform: uppercase;
+            color: $purple;
+            margin: 0px 0px 20px 0px;
+            font-family: 'Gotham-book';
+            font-size: 40px;
+            @include breakpoint(md_pc){
+                font-size: 30px;
+            }
+            @include breakpoint(md_pc){
+                font-size: 22px;
+            }
+        }
+        p{
+            color: #5f6062;
+            font-family: 'Gotham-book';
+            font-size: 12px;
+            &.ft-16 {
+                font-size: 16px;
+            }
+        }
+        .share {
+            color: $yellow;
+            position: absolute;
+            bottom: 40px;
+            left: 45px;
+            @include breakpoint(mobile){
+                position: relative;
+                bottom: 0px;
+                left: 0px;
+            }
+        }
+    }
+    .slider {
+        @include shadowBox;
+        display: block;
+    }
+}

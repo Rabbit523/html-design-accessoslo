@@ -1,0 +1,12 @@
+&.login-portal{
+    @import "shared/main";
+    @import "dashboard/main";
+    @import "upcoming-request/main";
+    @import "empty-leg/main";
+    @import "invoices/main";
+    @import "feedback/main";
+    @import "manage-account/main";
+    @import "passenger-settings/main";
+    @import "profile-settings/main";
+    @import "make-new-request/main";
+}

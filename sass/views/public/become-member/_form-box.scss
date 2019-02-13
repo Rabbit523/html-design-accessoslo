@@ -1,0 +1,195 @@
+.form-box{
+    display: block;
+    padding: 100px 0px;
+    .box {
+        background: rgba(255, 246, 225, 0.85);
+        display: block;
+        padding: 30px;
+        .step{
+            h1{
+                font-family: 'Gotham-Book';
+                font-size: 35px;
+                text-transform: uppercase;
+                text-align: center;
+                display: block;
+                color: #61480e;
+                margin-top: 0px;
+            }
+            .timeline {
+                position: relative;
+                width: 100%;
+                display: block;
+                padding: 20px 0px 65px;
+                span {
+                    position: absolute;
+                    top: 10px;
+                    left: 0px;
+                    display: block;
+                }
+                p {
+                    display: inline;
+                    color: #bcae8f;
+                    font-family: 'Gotham';
+                    font-size: 14px;
+                    margin: 15px 0px 0px;
+                    &.text-left {
+                        float: left;
+                    }
+                    &.text-right {
+                        float: right;
+                    }
+                    &.active {
+                        color: #61480e;
+                    }
+                }
+            }
+            [class^="col-"] {
+                padding-right: 0px;
+                @include breakpoint(tablet){
+                    padding-right: 15px;
+                }
+                &:last-child {
+                    padding-right: 15px;
+                }
+            }
+			.form-group {
+				position: relative;
+				&.success:after, &.error:after {				
+					top: 12px!important;		
+					right: 6px!important;
+				}
+				.form-control {
+					@include placeholderColor(#61480e);
+					background-color: #fff;
+					font-size: 14px;
+					color: #61480e;
+					padding: 7px 10px;
+					height: auto;
+					border-radius: 0px;					
+				}
+			}            
+            .input-group-btn{
+                &:first-child>.btn{
+                    border-radius: 0px;
+                    border-width: 0px 1px 0px 0px;
+                    border-color: #e0e0e0;
+                    color: #61480e;
+                    font-size: 12px;
+                    height: 34px;
+                }
+            }
+            select {
+                background-image: url('../assets/img/arrow-select.jpg');
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-size: auto 100%;
+            }
+            .checkbox {
+                color: #61480e;
+                font-family: 'Gotham-book';
+                font-size: 14px;
+                a {
+                    color: $purple;
+                }
+            }
+            .wrapper-btns {
+                margin-top: 20px;
+                .btn-yellow {
+                    padding: 15px 25px;
+                }
+            }
+            small {
+                color: #787878;
+                font-size: 12px;
+                font-family: 'Gotham-book';
+                display: block;
+                padding-left: 20px;
+                a {
+                    color: $purple;
+                }
+            }
+            &.step-3 {
+                h2{
+                    color: #61480e;
+                    font-size: 20px;
+                    font-family: 'Gotham';
+                    font-weight: 300;
+                }
+                p{
+                    color: #61480e;
+                    font-family: 'Gotham-book';
+                    font-size: 14px;
+                }
+                .verify-box{
+                    margin-bottom: 40px;
+                    display: block;
+                }
+            }
+            &.step-4{
+                h2{
+                    color: #61480e;
+                    font-size: 20px;
+                    font-family: 'Gotham';
+                    font-weight: 300;
+                }
+                p{
+                    color: #61480e;
+                    font-family: 'Gotham-book';
+                    font-size: 14px;
+                }
+                b {
+                    font-family: 'Gotham-book';
+                    font-size: 20px;
+                    color: #61480e;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                .box-code {
+                    display: block;
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    .code{
+                        display: inline-block;
+                        width: 50px;
+                        height: 50px;
+                        box-shadow: inset 3px 3px 0px #61480e;
+                    }
+                }
+                .wrapper-btns {
+                    .link {
+                        color: #61480e;
+                        margin-top: 10px;
+                        font-size: 14px;
+                        display: block;
+                    }
+                }
+            }
+            &.step-5{
+                padding: 0px 50px;
+                h1{
+                    &:after {
+                        content:"";
+                        background: #c29834;
+                        width: 200px;
+                        height: 3px;
+                        display: block;
+                        margin: 30px auto;
+                    }
+                }
+                .radio{
+                    color: #61480e;
+                }
+                h2{
+                    color: #61480e;
+                    font-size: 20px;
+                    font-family: 'Gotham';
+                    font-weight: 300;
+                    text-align: center;
+                }
+                .wrapper-btns {
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}

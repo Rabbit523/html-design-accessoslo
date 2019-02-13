@@ -1,0 +1,335 @@
+.modal{
+    .modal-content{
+        border-radius: 0px;
+    }
+    &#newRequest,&#addRequest{
+        .close{
+            position: absolute;
+            opacity: 1;
+            top: 20px;
+            right: 20px;
+            z-index: 5;
+        }
+        h4{
+            font-family: 'Gotham-book';
+            font-weight: normal;
+            font-size: 30px;
+            color: $purple;
+            text-transform: uppercase;
+            margin-top: 0px;
+            span{
+                color: $yellow;
+            }
+        }
+        p{
+            margin-bottom: 30px;
+            font-family: 'Gotham-book';
+            font-size: 14px;
+            b{
+                font-weight: bold;
+            }
+        }
+        .box{
+            display: block;
+            padding: 40px;
+            select {
+                background-image: url('../assets/img/arrow-select-only.jpg');
+                background-repeat: no-repeat;
+                background-position: right center;
+                background-size: auto 100%;
+            }
+            .form-control {
+                @include placeholderColor(#333333);
+                background-color: #FFF;
+                font-size: 14px;
+                color: #333333;
+                padding: 7px 10px;
+                height: auto;
+            }
+        }
+        .alert-box{
+            @include title(#ff0000,14);
+            display: block;
+            margin-top: 30px;
+        }
+    }
+    &#cancelRequest{
+        .close{
+            position: absolute;
+            opacity: 1;
+            top: 20px;
+            right: 20px;
+            z-index: 5;
+        }
+        .main-img{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .box{
+            display: block;
+            padding: 40px;
+            h4{
+                font-family: 'Gotham-book';
+                font-weight: normal;
+                font-size: 30px;
+                color: #333333;
+                text-transform: uppercase;
+                margin-top: 0px;
+                margin-bottom: 60px;
+                text-align: center;
+            }
+            .wrapper-btns{
+                .btn {
+                    padding: 15px 20px;
+                }
+            }
+        }
+    }
+    &#writeReview{
+        .close{
+            position: absolute;
+            opacity: 1;
+            top: 20px;
+            right: 20px;
+            z-index: 5;
+        }
+        h4{
+            font-family: 'Gotham-book';
+            font-weight: normal;
+            font-size: 30px;
+            color: #fbcf1d;
+            width: 90%;
+            text-transform: uppercase;
+            margin-top: 0px;
+            span{
+                color: #333333;
+            }
+        }
+        .box{
+            display: block;
+            padding: 40px 20px;
+        }
+        .form-group{
+            margin-bottom: 30px;
+            label {
+                margin-bottom: 10px;
+            }
+        }		
+        .login-box {
+            .form-control {
+                @include placeholderColor(#725e0d);
+            }
+        }
+        .total-ranking{
+            .ranking-box{
+                @include ranking(28);
+                display: inline-block;              
+            }
+        }
+        .checkbox  {
+            font-size: 12px;
+            font-family: 'Gotham-book';
+        }
+        .list-items-rankings {
+            border: #e0e0e0 solid 1px;
+            .item {
+                background: #fff;
+                display: block;
+                padding: 15px;
+                border-bottom: #e0e0e0 solid 1px;
+                &:last-child {
+                    border-bottom: none;
+                }
+                p{
+                    font-family: 'Gotham-book';
+                    font-size: 14px;
+                    margin: 0px;
+                }
+                .ranking-box {
+                    @include ranking(16);
+                    display: inline-block;
+                }                
+            }
+        }
+        .clickReview {
+            background: #fbcf1d;
+            color: #735f0d;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            text-align: center;
+            padding: 7px 5px;
+            position: relative;
+            line-height: 1;
+            margin-left: 30px;
+            top: -6px;
+            &:before{
+                content:'';
+                display: block;
+                margin: 0 auto;
+                width: 0;
+                height: 0;
+                border-color: transparent #fbcf1d transparent transparent;
+                border-style: solid;
+                border-width: 13px;
+                position: absolute;                
+                left: -26px;
+				top: 0px;
+            }
+        }
+    }
+    &#confirmRequest, &#bookingReceipt, &#viewDetails, &#HandlingViewDetails, &#MeetViewDetails, &#LimousineViewDetails, &#EmptylegViewDetails{
+        .close{
+            position: absolute;
+            opacity: 1;
+            top: 5px;
+            right: 10px;
+            z-index: 5;
+			font-size: 30px;
+        }
+		.box{
+            padding: 40px 20px;
+            display: block;
+            .header{
+                display: block;
+                border-bottom: solid 1px #e2e2e2;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                h4{
+                    font-family: 'Gotham-book';
+                    font-weight: normal;
+                    font-size: 30px;
+                    color: $purple;
+                    text-transform: uppercase;
+                    margin-top: 0px;
+                    span{
+                        color: $yellow;
+                    }
+                }
+                p{
+                    font-family: 'Gotham-book';
+                    font-weight: normal;
+                    font-size: 20px;
+                    color: #5f6062;					
+                }
+            }
+            .info-box{
+                display: block;
+                border-bottom: solid 1px #e2e2e2;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                font-family: 'Gotham-book';
+                font-size: 16px;
+                b{
+                    color: #d1b270;
+                    font-weight: normal;
+                }
+                p{
+                    color: #5f6062;
+                }
+            }
+            .user-info{
+                text-align: center;
+                display: block;
+                border-bottom: solid 1px #e2e2e2;
+                margin-bottom: 20px;
+                margin-top: 40px;
+                p{
+                    @include title(#5f6062, 14);
+                    line-height: 22px;
+                    span{
+                        display: block;
+                        color: #c29734;
+                    }
+                    a{
+                        color: $purple;
+                    }
+                }
+                img{
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+            .total-box{
+                display: block;
+                border-bottom: solid 1px #e2e2e2;
+                margin-bottom: 20px;
+                padding-bottom: 20px;
+                p{
+                    font-family: 'Gotham-book';
+                    font-size: 16px;
+                    color: #5f6062;
+                    b{
+                        font-weight: normal;
+                        font-size: 20px;
+                        display: block;
+                    }
+                }
+                span{
+                    font-family: 'Gotham-book';
+                    font-size: 26px;
+                    color: #c29734;
+                }
+            }
+        }
+		.paypal_div {
+			width: 100%; 
+			display: inline-block; 
+			border-top: 1px solid #e2e2e2;
+			margin-top: 20px;
+		} 
+		.paypal {
+			float:right; 
+			margin-top:15px; 
+			padding: 10px;
+		}
+    }
+    &#modal-comment{
+        .close{
+            position: absolute;
+            opacity: 1;
+            top: 20px;
+            right: 20px;
+            z-index: 5;
+        }
+        .modal-dialog{
+            .modal-content{
+                background: #f5f5f5;
+                padding: 45px;
+                border-radius: 10px;
+                .modal-header{
+                    padding: 0px;
+                    border: none;
+                    p{
+                        color: $yellow;
+                        font-size: em(20);
+                        font-family: 'Gotham-Book';
+                        text-transform: uppercase;
+                    }
+                    h4{
+                        color: $purple;
+                        font-size: em(34);
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                }
+                .modal-body{
+                    padding: 0px;
+                    .comment-box{
+                        background: #fff;
+                        border: solid 1px #7f7f7f;
+                        display: block;
+                        padding: 15px;
+                        p{
+                            color: #7f7f7f;
+                            font-size: em(17);
+                            font-weight: 600;
+                            line-height: 25px;
+                            margin: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

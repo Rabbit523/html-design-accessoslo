@@ -1,0 +1,235 @@
+footer {
+    display: block;
+    padding: 30px 0px 20px;
+    margin: 0px;
+    width: 100%;
+    background: #ffffff;
+    .box-top{
+        display: block;
+        width: 100%;
+        padding-bottom: 12px;
+        margin-bottom: 60px;
+        border-bottom: solid 1px #e0e0e0;
+        span {
+            position: relative;
+            i {
+                color: $yellow;
+            }
+        }
+        a {
+            font-weight: bold;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #5f6062;
+        }
+        .box-left {
+            text-align: left;
+            line-height: 1;
+            padding-top: 11px;
+            span {
+                font-size: 20px;
+                margin-right: 5px;
+                top: 4px;
+            }
+        }
+        .box-right {
+            text-align: right;
+            line-height: 1;
+            span {
+                font-size: 30px;
+                margin-left: 5px;
+                top: 4px;
+            }
+        }
+    }
+    .box-bottom {
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        padding-top: 15px;
+        margin-top: 40px;
+        border-top: solid 1px #e0e0e0;
+        b {
+            color: #5f6062;
+        }
+        a {
+            color: $purple;
+        }
+        .box-left {
+            color: #adadad;
+            @include breakpoint(tablet){
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0px;
+            }
+        }
+        .box-right {
+            color: #8c8c8c;
+            text-align: right;
+            ul {
+                padding: 0px;
+                display: block;
+                margin: 0px;
+                list-style: none;
+                @include breakpoint(tablet){
+                    text-align: center;
+                }
+                li {
+                    display: inline-block;
+                    &:before {
+                        content: "\2022";
+                        color: $yellow;
+                        font-size: 20px;
+                        line-height: 0;
+                        position: relative;
+                        top: 4px;
+                        margin: 0px 5px;
+                    }
+                    &:first-child {
+                        &:before {
+                            display: none;
+                        }
+                    }
+                    a{
+                        color: #8c8c8c;
+                    }
+                }
+            }
+        }
+    }
+    .box {
+        h6 {
+            color: $yellow;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: 'Gotham';
+            text-transform: uppercase;
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+        .social-list{
+            ul {
+                padding: 0px;
+                display: block;
+                margin: 0px;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    margin-right: 10px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    a {
+                        color: #acacac;
+                        font-size: 23px;
+                        &:hover {
+                            color: $purple;
+                        }
+                    }
+                }
+            }
+        }
+        .logo {
+            padding-top: 15px;
+        }
+        .contact {
+            font-size: 12px;
+            padding-top: 15px;
+            p{
+                color: #5f6062;
+                i {
+                    margin-right: 5px;
+                    color: $purple;
+                }
+                span {
+                    color: $purple;
+                }
+            }
+        }
+        .newsletter {
+            .email {
+                padding-right: 0px;
+                @include breakpoint(md_pc){
+                    padding-right: 15px;                    
+                }
+            }
+            input[type="submit"]{
+                @extend .submit-yellow;
+                border-radius: 0px;
+                outline: none;
+            }
+        }
+        .blog {
+            ul {
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                font-size: 12px;
+                li {
+                    margin-bottom: 8px;
+                    &:before {
+                        content: "\2022";
+                        color: $yellow;
+                        font-size: 20px;
+                        line-height: 0;
+                        position: relative;
+                        top: 2px;
+                        margin-right: 2px;
+                    }
+                    a {
+                        color: #5f6062;
+                        &:hover {
+                            color: $yellow;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .language {
+            .language-box {
+                border: solid 1px #e0e0e0;
+                display: inline-block;
+                padding: 15px 20px;
+                font-family: 'Gotham-book';
+                font-size: 12px;
+                color: #b2b2b2;
+                .dropdown-toggle{
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+                a {
+                    color: #b2b2b2;
+                }
+            }
+        }
+        &.box-first {
+            .item {
+                @include breakpoint(tablet){
+                    margin-bottom: 30px;
+                }
+                >div{
+                    &:nth-child(2), &:nth-child(3){
+                        margin-top: 30px;
+                    }
+                }
+                p{
+                    font-family: 'Gotham-Book';
+                    font-size: 12px;
+                    line-height: 20px;
+                }
+                .logo-footer{
+                    max-width: 200px;
+                    margin-top: 30px;
+                }
+            }
+        }
+        &.box-last {
+            margin-top: 20px;
+            display: block;
+        }
+    }
+}

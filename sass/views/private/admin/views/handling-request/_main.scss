@@ -1,0 +1,33 @@
+.accessoslo-handling-request{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        min-height: 25px;
+        &.date{
+            width: 10%;
+        }
+        &.airport{
+            width: 19%;
+        }
+        &.company{
+            width: 15%;
+        }
+        &.aircraft{
+            width: 20%;
+        }        
+        &.flight{
+            width: 14%;
+        }
+		&.status{
+            width: 12%;
+        }
+        &.actions{
+            width: 10%;
+            text-align: right;
+        }
+    }
+}

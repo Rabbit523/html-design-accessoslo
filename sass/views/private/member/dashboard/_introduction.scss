@@ -1,0 +1,70 @@
+.introduction{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: -100px 0px 0px;
+    @include breakpoint(tablet){
+        margin-top: 0px;
+    }
+    .wrapper-items {
+        position: absolute;
+        z-index: 5;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 22%;
+        @include breakpoint(tablet){
+            position: relative;
+            top: 0px;
+            margin-top: 30px;
+        }
+        h1 {
+            @include title(#FFF,24);
+            margin-top: 0px;
+            margin-bottom: 30px;
+            display: block;
+            @include breakpoint(tablet){
+                color: #000;
+            }
+        }
+        .box{
+            display: block;
+            border: solid 20px rgba(255, 255, 255, 0.3);
+            .wrapper {
+                background: rgba(255, 255, 255, 0.8);
+                padding: 20px 0px;
+                display: block;         
+            }
+            figure{
+                &:after{
+                    content: "";
+                    background: #c2c2c2;
+                    width: 85px;
+                    height: 2px;
+                    display: block;
+                    margin: 20px auto 10px;
+                }
+            }
+            h3{
+                @include title(#333333, 34);
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            h2{
+                @include title($purple, 16);
+                text-transform: uppercase;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                &:after{
+                    content: "";
+                    background: #c2c2c2;
+                    width: 85px;
+                    height: 2px;
+                    display: block;
+                    margin: 20px auto 10px;
+                }
+            }
+        }
+    }
+}

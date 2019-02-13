@@ -1,0 +1,73 @@
+.wrapper-content {  
+    padding-bottom: 60px;
+    .box {
+        &.box-left {
+            @include shadowBox;
+            padding: 30px;
+            background: #FFF;
+            h2{
+                @include title($yellow, 24);
+                margin-top: 0px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+            }
+            h3{
+                @include title(#5f6062, 20);
+                margin-top: 0px;
+                margin-bottom: 20px;
+                margin-top: 30px;
+            }
+            h4{
+                @include title(#5f6062, 18);
+                margin-top: 0px;
+                margin-bottom: 20px;
+            }
+            p{
+                color: #5f6062;
+                font-family: 'Gotham-book';
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 24px;
+                margin-bottom: 10px;
+                a{
+                    color: $yellow;
+                }
+            }
+            @include breakpoint(tablet){
+                margin-bottom: 30px;
+            }
+        }
+        &.box-right{
+            .item{
+                @include shadowBox;
+                padding: 0px;
+                background: #FFF;
+                margin-bottom: 40px;
+                display: inline-block;
+                width: 100%;
+                figure  {
+                    display: block;
+                    width: 116px;
+                    float: left;
+                    max-width: 25%;
+                }
+                > div {
+                    display: block;
+                    float: left;
+                    width: 75%;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    h5{
+                        @include title($purple, 18);
+                        margin-top: 20px;
+                        margin-bottom: 0px;
+                    }
+                    p{
+                        @include title($yellow, 12);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}

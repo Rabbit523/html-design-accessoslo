@@ -1,0 +1,40 @@
+.introduction{
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: -140px 0px 0px;
+    @include breakpoint(sm_pc){
+        margin-top: 0px;
+    }
+    .wrapper-content {
+        position: absolute;
+        z-index: 5;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 40%;
+        text-align: center;
+        @include breakpoint(sm_pc){
+            top: 30%;
+        }
+        @include breakpoint(mobile){
+            top: 0%;
+        }
+        h1 {
+            font-family: 'Gotham-Book';
+            font-size: 45px;
+            font-weight: normal;
+            color: #fff;
+            @include breakpoint(sm_pc){
+                font-size: 20px;
+            }
+        }
+        h2 {
+            font-family: 'Gotham-Book';
+            font-size: 28px;
+            font-weight: normal;
+            color: #fff;
+        }
+    }
+}

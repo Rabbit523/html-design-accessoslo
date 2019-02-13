@@ -1,0 +1,10 @@
+.header-list{
+    background: $yellow;
+    padding: 10px 30px;
+    color: #FFF;
+    .label-table{
+        text-transform: uppercase;
+        font-size: em(14);
+        line-height: 25px;
+    }
+}

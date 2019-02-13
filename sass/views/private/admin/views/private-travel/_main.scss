@@ -1,0 +1,32 @@
+.accessoslo-private-travel{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        &.title{
+            width: 9%;
+        }
+        &.first-name{
+            width: 16%;
+        }
+        &.last-name{
+            width: 18%;
+        }
+        &.email{
+            width: 19%;
+        }
+        &.phone{
+            width: 18%;
+        }
+        &.comments{
+            width: 14%;            
+        }
+		&.toggle{
+            text-align: center;
+            width: 6%;
+        }
+    }
+}

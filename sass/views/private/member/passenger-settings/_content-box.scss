@@ -1,0 +1,105 @@
+.content-box{
+    display: block;
+    margin: 0px 0px 0px;
+    padding-bottom: 50px;
+	background: #f8f6f0;
+    .box-left{
+        h3{
+            &:after{
+                width: 108%;
+            }
+        }
+    }
+    h2{
+        @include title(#333333,25);
+    }
+    h3{
+        @include title($yellow, 18);
+        margin-bottom: 40px;
+        &:after{
+            content: "";
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            height: 1px;
+            background: #dedad2;
+        }
+    }
+    p{
+        @include title(#333333, 12);
+    }
+    form{
+        margin-top: 40px;
+        label{
+            @include title(#333333, 12);
+            margin-top: 15px;
+        }
+        select {
+            background-image: url('../assets/img/arrow-select-only.jpg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: auto 100%;
+        }
+		.form-group {
+			position: relative;
+			&.success:after, &.error:after {				
+				top: 13px!important;		
+				right: 10px!important;
+			}
+			.form-control {
+				@include placeholderColor(#333333);
+				background-color: #FFF;
+				font-size: 14px;
+				color: #333333;
+				padding: 7px 10px;
+				height: auto;
+			}
+		}        
+        .btn{
+            padding: 10px 12px;
+            margin-top: 15px;
+        }
+    }
+    .box-wrapper{
+        .box{
+            @include shadowBox();
+            display: block;
+            background: #fff;
+            margin-bottom: 30px;
+            .header{
+                background: $yellow;
+                padding: 10px 20px;
+                display: inline-block;
+                width: 100%;
+                clear: both;
+                h4{
+                    @include title(#fff,20);
+                    display: block;
+                    width: 70%;
+                    float: left;
+                }
+                .options-box{
+                    display: block;
+                    width: 30%;
+                    float: left;
+                    text-align: right;
+                    a{
+                        margin-top: 20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .info-box{
+                padding: 20px;
+                display: block;
+                p{
+                    @include title($yellow, 16);
+                    b{
+                        color: #61480e;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+}

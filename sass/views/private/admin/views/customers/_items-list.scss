@@ -1,0 +1,15 @@
+.items-list{
+    display: block;
+    .item{
+        background: white;
+        color: #333333;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        .action{
+            a{
+                color: $purple;
+				cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,171 @@
+.content-box{
+    display: block;
+    margin: 0px 0px 0px;
+    padding-bottom: 50px;
+	background: #f8f6f0;
+    .btn-yellow{
+        padding: 10px 12px;
+        margin-top: 15px;
+    }
+    .box-left{
+        h3{
+            &.full{
+                &:after{
+                    width: 108%;
+                }
+            }
+        }
+    }
+	.box-right {
+		position: sticky;
+		top: 20px;
+	}
+    h2{
+        @include title(#333333,28);
+    }
+    h3{
+        @include title($yellow, 20);
+        margin-bottom: 40px;
+        &:after{
+            content: "";
+            display: block;
+            width: 100%;
+            margin-top: 25px;
+            height: 1px;
+            background: #dedad2;
+        }
+    }
+    p{
+        @include title(#333333, 12);
+    }
+    form{
+        margin-top: 40px;
+        label{
+            @include title(#333333, 12);
+            margin-top: 15px;
+        }
+        .checkbox{
+            margin: 0px;
+        }
+        select {
+            background-image: url('../assets/img/arrow-select-only.jpg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: auto 100%;
+        }
+        .input-group{
+            .dropdown-toggle {
+                border-radius: 0px;
+                border-right: none;
+                border-color: #e0e0e0;
+                line-height: 2.2;
+            }
+        }	
+		.form-group {		
+			&.success:after, &.error:after {	
+				right: 19px;		
+			}
+		}	
+        .form-control {
+            @include placeholderColor(#333333);
+            background-color: #FFF;
+            font-size: 14px;
+            color: #333333;
+            padding: 7px 10px;
+            height: auto;
+        }
+    }
+    .box-wrapper{
+        .box{
+            @include shadowBox();
+            display: block;
+            background: #fff;
+            margin-bottom: 30px;
+            .header{
+                background: $yellow;
+                padding: 10px 20px;
+                display: inline-block;
+                width: 100%;
+                clear: both;
+                h4{
+                    @include title(#fff,20);
+                    display: block;
+                    width: 70%;
+                    float: left;
+                }
+                .options-box{
+                    display: block;
+                    width: 30%;
+                    float: left;
+                    text-align: right;
+                    a{
+                        margin-top: 20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+            .info-box{
+                padding: 20px;
+                display: block;
+                p{
+                    @include title($yellow, 16);
+                    b{
+                        color: #61480e;
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+    }
+    .bar-loading{
+        color: $green;
+        margin-top: 30px;
+        padding-top: 40px;
+        border-top: solid 1px #dedad2;
+        >div{
+            display: block;
+            float: left;
+            width: 80%;
+            background: #f8f6f0;
+            height: 40px;
+            position: relative;
+            #perfect{
+                background: $green;
+                display: block;
+                width: 0%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+			#low{
+                background: $green;
+                display: block;
+                width: 0%;
+                height: 100%;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+        }
+        p{
+            color: $green !important;
+            position: relative;
+            top: 5px;
+            float: right;
+        }
+    }
+    .box-botton{
+        border-top: solid 1px #dedad2;
+        padding-top: 30px;
+        margin-top: 30px
+        p {
+            color: #787878;
+            font-size: 12px;
+            font-family: 'Gotham-book';
+        }
+        .link {
+            color: $purple;
+        }
+    }
+}

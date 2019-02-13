@@ -1,0 +1,32 @@
+.accessoslo-partners{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        &.partner-name{
+            width: 16%;
+        }
+        &.contact{
+            width: 18%;
+        }
+        &.phone{
+            width: 12%;
+        }
+        &.email{
+            width: 16%;
+        }
+        &.last-audit{
+            width: 15%;
+        }
+        &.permission{
+            width: 12%;
+        }
+        &.action{
+            text-align: right;
+            width: 10%;
+        }
+    }
+}

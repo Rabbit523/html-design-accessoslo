@@ -1,0 +1,111 @@
+#AccessModal {
+    .modal-content {
+        border-radius: 0px;
+        padding: 40px 20px;
+        .close {
+            position: absolute;
+            font-size: 35px;
+            color: #cdcdcd;
+            top: 20px;
+            right: 20px;
+            opacity: 1;
+        }
+        .modal-header {
+            text-align: center;
+            border: none;
+            h4 {
+                color: $purple;
+                font-family: 'Gotham-book';
+                font-weight: normal;
+                font-size: 28px;
+                text-transform: uppercase;
+                margin: 20px 0px 0px;
+            }
+            .timeline {
+                position: relative;
+                width: 100%;
+                display: block;
+                padding: 20px 0px;
+                span {
+                    position: absolute;
+                    top: 10px;
+                    left: 0px;
+                    display: block;
+                }
+                p {
+                    display: inline;
+                    color: #dfe2f6;
+                    font-family: 'Gotham';
+                    font-size: 14px;
+                    margin: 15px 0px 0px;
+                    &.text-left {
+                        float: left;
+                    }
+                    &.text-right {
+                        float: right;
+                    }
+                    &.active {
+                        color: $purple;
+                    }
+                }
+            }
+        }
+        .modal-body {
+            padding-top: 30px;
+            .checkbox-inline {
+                color: #929292;
+                font-size: 14px;
+                font-weight: normal;
+            }
+            .form-control {
+                @include placeholderColor(#b0b0b0);
+                background: #f5f5f5;
+                font-size: 14px;
+                color: #b0b0b0;
+                padding: 7px 10px;
+                height: auto;
+                &.user {
+                    background-image: url('../assets/img/icon-user-purple.png');
+                    background-repeat: no-repeat;
+                    background-position: 10% center;
+                    padding-left: 25px;
+                    background-size: 15px auto;
+                }
+                &.phone {
+                    background-image: url('../assets/img/icon-phone-purple.png');
+                    background-repeat: no-repeat;
+                    background-position: 4% center;
+                    padding-left: 30px;
+                    background-size: 15px auto;
+                }
+                &.email {
+                    background-image: url('../assets/img/icon-email-purple.png');
+                    background-repeat: no-repeat;
+                    background-position: 4% center;
+                    padding-left: 30px;
+                    background-size: 15px auto;
+                }
+            }
+            [class^="col-"] {
+                padding-right: 0px;
+                &:last-child {
+                    padding-right: 15px;
+                }
+            }
+            .btn-purple {
+                padding: 15px 50px;
+                img {
+                    width: 18px;
+                    margin-left: 10px;                
+                }
+            }
+            small {
+                display: block;
+                margin: 10px auto 0px;
+                font-family: 'Gotham-Book';
+                font-size: 12px;
+                color: #929292;
+            }
+        }
+    }
+}

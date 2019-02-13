@@ -1,0 +1,195 @@
+.btn{
+    transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+}
+.btn-purple {
+    background: $purple;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+    &:hover, &:focus {
+        color: #fff !important;
+        background: $purple !important;
+    }
+}
+
+.btn-red {
+    background: #e74141;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+    &:hover, &:focus {
+        color: #fff !important;
+        background: #e74141 !important;
+    }
+}
+
+.btn-green {
+    background: #94ce52;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+    &:hover, &:focus {
+        color: #fff !important;
+        background: #94ce52 !important;
+    }
+}
+
+.btn-gray {
+    background: #f8f6f0;
+    color: #312f2a;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: solid 1px #cfcfcf;
+    &:hover, &:focus {
+        color: #312f2a !important;
+        background: #f8f6f0 !important;
+    }
+}
+
+.btn-orange {
+    background: #f49b0b;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+    &:hover, &:focus {
+        color: #fff !important;
+        background: #f49b0b !important;
+    }
+}
+
+.btn-yellow {
+    background: $yellow;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;    
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+    &:hover, &:focus {
+        color: #fff !important;
+        background: $yellow !important;
+    }
+}
+
+.btn-yellow-light {
+    background: #fbcf1e;
+    color: #fff;
+    font-family: 'Gotham';
+    font-weight: bold;    
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+    &:hover, &:focus {
+        color: #fff !important;
+        background: #fbcf1e !important;
+    }
+}
+
+.btn-white {
+    background: #FFF;
+    color: $yellow;
+    font-family: 'Gotham';
+    font-weight: bold;    
+    font-size: 14px;
+    border-radius: 0px;
+    text-transform: uppercase;
+    border: none;
+    &:hover, &:focus {
+        color: $yellow !important;
+        background: #FFF !important;
+    }
+}
+
+.btn-yellow-light-gold {
+    background: #fbcf1d;
+    color: #725e0d;
+    font-family: 'Gotham';
+    font-weight: bold;    
+    font-size: 14px;
+    border-radius: 0px;
+    border: none;
+    padding: 10px 25px;
+    &:hover, &:focus {
+        color: #725e0d !important;
+        background: #fbcf1d !important;
+    }
+}
+
+.btn-border-gold {
+    border: solid 1px $yellow;
+    color: $yellow;
+    text-transform: uppercase;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    &:hover {
+        background: $yellow;
+        color: #FFF;
+    }
+}
+
+.btn-border-purple {
+    border: solid 1px $purple;
+    color: $purple;
+    text-transform: uppercase;
+    font-family: 'Gotham';
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 0px;
+    padding-left: 30px;
+    padding-right: 30px;
+    &:hover, &:focus {
+        background: $purple;
+        color: #FFF;
+    }
+}
+
+.arrow{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: $yellow;
+    position: absolute;
+    top: 45%;
+    color: #FFF;
+    z-index: 5;
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+    &:hover{
+        color: #FFF;
+    }
+    &.arrow-prev{
+        left: 0px;
+    }
+    &.arrow-next{
+        right: 0px;
+    }
+}

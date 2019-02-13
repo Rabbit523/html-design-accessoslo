@@ -1,0 +1,86 @@
+.accessoslo-setting {
+    background: #f8f6f0;
+    .content-box{
+		display: block;
+		margin: 30px 0px 0px 20px;
+		padding-bottom: 50px;
+		padding-top: 0px;
+		background: #fff;
+		.form-group {
+		    position: relative;
+			&.success:after, &.error:after {	
+				right: 5px;
+				top: 40px;		
+			}
+		}
+		p {
+			font-size: 13px;
+		}
+		.title {
+			padding:40px 0px 0px 30px;
+			h3 {
+				color: #202020;
+				font-weight: 500;
+				margin:0px 0px 0px;
+			}				
+		}
+		.profile {		    
+			.image {
+				display: inline-block;
+				padding:0px 0px 0px 30px;
+				.info-user {				
+					.text_info {
+						display: inline-block;
+						margin-left: 20px;
+						margin-top: 10px;
+					}
+					.avatar {
+						display: block;
+						width: 65px;
+						height: 65px;
+						float: left;
+					}
+				}
+			}
+			.dropzone-section {
+				display: block;
+				padding:20px 0px 0px 30px;
+				width: 500px;
+				height: auto;
+			}
+		}
+		.personal_info {
+			.informations {
+				padding:10px 0px 0px 30px;
+				display:inline-block;
+				.form-group {
+					width:250px;
+					height:auto;
+					float: left;
+					margin-right: 25px;
+					label {
+						font-size: 13px;
+					}					
+					.form-control {
+						@include placeholderColor(#333333);
+						background-color: #FFF;
+						font-size: 14px;
+						color: #333333;
+						padding: 7px 10px;
+						height: auto;
+					}					
+				}        
+			}
+		}
+		.button_section {
+			padding:20px 0px 150px 30px;
+			#save{
+				width:180px;
+				height:auto;
+			}
+			.error{
+				color:red;
+			}
+		}
+	} 
+}

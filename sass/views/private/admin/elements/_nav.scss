@@ -1,0 +1,134 @@
+nav{
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    min-height: 100%;
+    min-height: 100vh;
+    background: #FFF;
+    position: absolute;
+    width: $sidebar-width;
+    border-right: solid 1px #d3d3d3;
+    .brand{
+        background: $yellow;
+        display: block;
+        padding: 30px 0px;
+        border-bottom: solid 1px #d3d3d3;
+        a{
+            display: block;
+            margin: 0px auto;
+            max-width: 180px;
+        }
+    }
+    ul{
+        list-style: none;
+        text-align: left;   
+        text-transform: uppercase;
+        font-weight: bold;
+        li{
+            display: block;
+            position: relative;
+            a{
+                display: block;
+                position: relative;
+                transition: all 0.3s ease-in-out;
+                -moz-transition: all 0.3s ease-in-out;
+                -o-transition: all 0.3s ease-in-out;
+                -webkit-transition: all 0.3s ease-in-out;
+                &:hover,&:focus{
+                    text-decoration: none;
+                }
+            }
+            &.active, &:hover{
+                a{
+                    color: $yellow;
+                }
+            }
+        }             
+    }
+    >ul{
+        display: block;
+        padding: 0px 20px 30px;
+        margin: 0px;
+        > li{
+            font-size: em(16);
+            border-bottom: solid 1px #d3d3d3;
+            > a{
+                margin: 10px 0px;
+                padding: 15px 0px;
+                color: $purple;
+                span{
+                    transform: rotate(180deg);
+                    display: inline-block;
+                    transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                }
+                &.collapsed{
+                    span{
+                        transform: rotate(0deg);
+                    }
+                }
+            }
+            .sub-menu{
+                padding: 0px;
+                > li{
+                    font-size: em(13.5);
+                    > a{
+                        color: $purple;
+                        padding: 10px 0px;
+                        &:hover{
+                            color: $yellow;
+                        }
+                        &:before{
+                            content: "\2022";
+                            color: $yellow;
+                            font-size: 20px;
+                            margin-right: 5px;
+                            line-height: 1;
+                            position: relative;
+                            top: 2px;
+                        }
+                        small{
+                            background: $green;
+                            color: #FFF;
+                            display: inline;
+                            border-radius: 5px;
+                            padding: 2px 5px;
+                            margin-left: 3px;
+                        }
+                    }
+                    &.active, &:hover{
+                        a{
+                            color: $yellow;
+                        }
+                    }
+                    &.active{
+                        &:after{
+                            content: "\f0da";
+                            font: normal normal normal 20px/1 FontAwesome;
+                            position: absolute;
+                            right: 0px;
+                            top: 30%;
+                            color: $yellow;
+                        }
+                    }
+                    &:last-child{
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+.copyright{
+    color: #54534f;
+    font-size: em(12);
+    text-transform: uppercase;
+    margin: 0px;
+    display: block;
+    padding: 0px 20px;
+    a{
+        color: #54534f;
+    }
+}

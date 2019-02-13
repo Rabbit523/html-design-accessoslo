@@ -1,0 +1,154 @@
+@mixin placeholderColor($color){
+    &::-webkit-input-placeholder {
+        color: $color;
+    }   
+    &:-moz-placeholder  {
+        color: $color;
+    }
+    &::-moz-placeholder  {
+        color: $color;        
+    }
+    &:-ms-input-placeholder {
+        color: $color;        
+    }
+}
+
+@mixin breakpoint($point){
+    @if $point == max_tablet{
+        @media only screen and (min-width : 768px){ @content; }
+    }
+    @else if $point == md_pc{
+        @media only screen and (max-width : 1200px){ @content; }
+    }
+    @else if $point == sm_pc {
+        @media only screen and (max-width : 992px){ @content; }
+    }
+    @else if $point == tablet {
+        @media only screen and (max-width : 768px){ @content; }
+    }
+    @else if $point == mobile {
+        @media only screen and (max-width : 480px){ @content; }
+    }
+}
+
+@mixin title($color, $size) {
+    font-family: 'Gotham';
+    font-weight: normal;
+    color: $color;
+    font-size: $size+px;
+}
+
+@mixin shadowBox(){
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(61, 47, 12, 0.15);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(61, 47, 12, 0.15);
+    box-shadow: 0px 0px 15px 0px rgba(61, 47, 12, 0.15);
+}
+
+@mixin ranking($size){
+    ul {
+        padding: 0px;
+        color: #fbcf1d;                            
+        margin: 0px;
+        display: block;
+        font-size: $size+px;
+        li{
+            display: inline-block;
+        }
+    }
+}
+/* Extend */
+.submit-purple {
+    background: $purple;
+    color: #FFF;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    line-height: 1;
+    appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+}
+
+.submit-yellow {
+    background: $yellow;
+    color: #FFF;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    line-height: 1;
+    appearance: none;
+    -moz-appearance: none;
+    -ms-progress-appearance: none;
+    -webkit-appearance: none;
+}
+
+.radioCustom{
+    input[type=radio] {
+        position: absolute;
+        visibility: hidden;
+        &:checked ~ .check {
+            border: 1px solid $yellow;
+        }
+        &:checked ~ .check::before{
+            background: $yellow;
+        }
+        &:checked ~ label{
+            color: $yellow;
+        }
+    }
+    label{
+        display: block;
+        position: relative;
+        font-weight: 300;
+        font-size: 16px;
+        padding: 25px 0px 25px 0px;
+        margin: 0px auto;
+        height: 30px;
+        z-index: 9;
+        -webkit-transition: all 0.25s linear;
+    }
+    &:hover label{
+        color: #333333;
+    }
+    .check{
+        display: block;
+        position: absolute;
+        border: 1px solid #333333;
+        border-radius: 100%;
+        height: 26px;
+        width: 26px;
+        top: 0px;
+        left: 20px;
+        z-index: 5;
+        transition: border .25s linear;
+        -webkit-transition: border .25s linear;
+        &:before {
+            display: block;
+            position: absolute;
+            content: '';
+            border-radius: 100%;
+            height: 12px;
+            width: 12px;
+            top: 6px;
+            left: 6px;
+            margin: auto;
+            transition: background 0.25s linear;
+            -webkit-transition: background 0.25s linear;
+        }
+    }
+    &:hover .check {
+        border: 1px solid #333333;
+        &:before{
+            background: #333333;
+        }
+    }
+}

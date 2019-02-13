@@ -1,0 +1,31 @@
+.introduction {
+    display: block;
+    margin: 50px 0px 0px;
+    padding: 0px;
+    width: 100%;
+    h3 {
+		font-family: 'Gotham';
+		font-weight: normal;
+		color: #c29834;
+		font-size: 22px;		
+		margin-left: 200px;
+	}
+	.top-info {
+		display: inline-block;
+		margin-left: 270px;
+		margin-right: 240px;
+		width: 50%;
+		border-bottom: 1px solid #e2e2e2;
+		.date {
+			font-size: x-small;
+			margin-left: -15px;
+			p {
+				margin: 4px 0 10px;
+			}
+		}
+		.link {
+			text-align: right;
+			margin-right: -30px;
+		}
+	}
+}

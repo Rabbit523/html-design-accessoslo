@@ -1,0 +1,231 @@
+.content-box{
+    display: block;
+    margin: 0px 0px 0px;
+    padding-bottom: 80px;
+	background: #f8f6f0;
+    .top-box{
+		margin-top: 30px;
+        margin-bottom: 30px;
+        .result-box {
+            @include title(#333333, 20);
+        }
+        .options-box{
+            display: block;
+            float: right;
+            .status{
+                display: block;
+                float: left;
+                margin-right: 10px;
+                select {
+                    background-image: url('../assets/img/arrow-select.jpg');
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    background-size: auto 100%;
+                }
+                .form-control {
+                    @include placeholderColor(#8e8e8e);
+                    background-color: #FFF;
+                    font-size: 14px;
+                    color: #8e8e8e;
+                    padding: 3px 60px 3px 10px;
+                    height: auto;
+                    width: auto;
+                }
+            }
+            .display-box{
+                display: block;
+                float: left;
+                .item{
+                    background: #fff;
+                    width: 35px;
+                    height: 35px;
+                    display: block;
+                    float: left;
+                    cursor: pointer;
+                    border: solid 1px #e0e0e0;
+                    &.active, &:hover {
+                        border: solid 1px $yellow;
+                    }
+                    &:first-child{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .money-box{
+                display: block;
+                float: left;
+                margin-right: 20px;            
+                .btn-group{
+                    color: #8e8e8e;
+                    border-radius: 0px;
+                    border: solid 1px #e0e0e0;
+                    .btn{
+                        &.dropdown-toggle{
+                            border-left: solid 1px #e0e0e0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .list-items{
+        .btn {
+            padding: 10px 12px;
+        }
+        .item {
+            @include shadowBox();
+            background: #FFF;
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 30px;
+            .slider-box{
+                padding: 0px;
+            }
+            .info-box{
+                padding: 20px;
+                h3{
+                    @include title(#8e8e8e, 16);
+                    margin-top: 5px;
+                }
+                h4{
+                    @include title($purple, 20);
+                    margin-bottom: 15px;
+                    span{
+                        font-family: 'Gotham-book';
+                        font-size: 24px;
+                        color: #8e8e8e;
+                    }
+                }
+                .list{
+                    padding: 0px;
+                    margin: 0px;
+                    display: block;
+                    width: 100%;
+                    li{
+                        @include title(#8e8e8e, 12);
+                        display: block;
+                        width: 25%;
+                        float: left;
+                        @include breakpoint(mobile){
+                            width: 100%;
+                        }
+                    }
+                }
+                .box-left{
+                    display: block;
+                    width: 35%;
+                    float: left;
+                    margin-top: 30px;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                    }
+                    h5{
+                        @include title($yellow, 20);
+                        margin: 0px;
+                    }
+                    p{
+                        @include title(#8e8e8e, 12);
+                        margin: 0px;
+                    }
+                }
+                .box-right{
+                    margin-top: 30px;
+                    display: block;
+                    width: 65%;
+                    float: left;
+                    text-align: right;
+                    @include breakpoint(mobile){
+                        width: 100%;
+                        text-align: center;
+                        .btn{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+		.col-view {
+			width: 32%;
+			float: left;
+		}
+		.col-view:nth-child(2n) {
+			margin-left: 20px;
+		}
+		.col-view:nth-child(3n) {
+			float: right;
+		}
+		.image-box {
+			position: relative;
+		}
+		.detail-box {
+			background-color: #fff;
+			margin-top: -20px;
+			padding: 20px;
+			h3{
+				@include title(#8e8e8e, 16);
+				font-size: 18px;
+				margin-top: 25px;
+			}
+			h4{
+				@include title($purple, 20);
+				margin-bottom: 15px;
+				span{
+					font-family: 'Gotham-book';
+					font-size: 24px;
+					color: #8e8e8e;
+				}
+			}
+			.list{
+				padding: 0px;
+				margin: 0px;
+				display: block;
+				width: 100%;
+				li{
+					@include title(#8e8e8e, 12);
+					display: block;
+					width: 25%;
+					float: left;
+					@include breakpoint(mobile){
+						width: 100%;
+					}
+				}
+			}
+			.box-status{
+				display: block;				
+				margin-top: 30px;
+				@include breakpoint(mobile){
+					width: 100%;
+				}
+				h5{
+					@include title($yellow, 20);
+					margin: 0px;
+				}
+				p{
+					@include title(#8e8e8e, 12);
+					margin: 0px;
+				}
+			}			
+		}
+		.box-button{
+			margin-top: 30px;
+			display: block;				
+			width: 100%;
+			.btn {
+				width: 100%;
+			}
+			.cancel_request {
+				margin-top: 15px;
+			}
+			.write_review {
+				margin-top: 15px;
+			}
+			@include breakpoint(mobile){
+				width: 100%;
+				text-align: center;
+				.btn{
+					margin-bottom: 10px;
+				}
+			}
+		}
+    }
+}

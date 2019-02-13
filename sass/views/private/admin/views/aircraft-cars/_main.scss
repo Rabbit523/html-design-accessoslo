@@ -1,0 +1,29 @@
+.accessoslo-aircraft-cars{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        &.image{
+            width: 10%;
+			img {
+				width: 50px;
+				height: 50px;
+			}
+        }
+        &.parnter{
+            width: 30%;
+        }
+        &.type{
+            width: 30%;
+        }
+        &.capacity{
+            width: 25%;
+        }
+        &.action{
+            width: 5%;
+        }       
+    }
+}

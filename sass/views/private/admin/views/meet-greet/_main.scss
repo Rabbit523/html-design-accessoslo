@@ -1,0 +1,35 @@
+.accessoslo-meet-greet{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        &.booking-id{
+            width: 11%;
+        }
+        &.contact{
+            width: 13%;
+        }
+        &.email{
+            width: 13%;
+        }
+        &.phone{
+            width: 13%;
+        }
+        &.date{
+            width: 12%;
+        }
+        &.service{
+            width: 20%;
+        }
+		&.status {
+			width: 12%;
+		}
+        &.toggle{
+            text-align: center;
+            width: 6%;
+        }
+    }
+}

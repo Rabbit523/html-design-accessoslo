@@ -1,0 +1,100 @@
+.general-wrapper{
+    display: block;
+    width: 100%;
+    
+    .page-container{
+        padding-left: $sidebar-width;
+        min-height: 100vh;
+        background: #f8f6f0;
+        .content-box{
+            padding-top: 30px;
+            .form-box{
+                form{
+                    .search-form{
+                        background: #FFF;
+                        border-radius: 0px;
+                        color: #848484;
+                        font-size: em(16);
+                        background-image: url('../assets/img/admin/icon-search.jpg');
+                        background-repeat: no-repeat;
+                        background-position: 100% center;
+                        padding: 12px 70px 12px 12px; 
+                        height: auto;
+                        margin-bottom: 15px;
+                        &:focus{
+                            border-color: #d9d9d9;
+                            -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(36, 32, 32, 0.45);
+                            box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(36, 32, 32, 0.45);
+                        }
+                    }
+                }
+            }
+            .date-input{
+                background-color: #FFF;
+                border-radius: 0px;
+                color: #848484;
+                font-size: em(16);
+                background-image: url('../assets/img/admin/icon-date.jpg');
+                background-repeat: no-repeat;
+                background-position: 100% center;
+                padding: 12px 70px 12px 12px; 
+                height: auto;
+                margin-bottom: 15px;
+                &:focus{
+                    border-color: #d9d9d9;
+                    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(36, 32, 32, 0.45);
+                    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(36, 32, 32, 0.45);
+                }
+            }
+            select{
+                width: 100%;
+                -webkit-appearance: none;
+                border-radius: 0px;
+                border: 1px solid #ccc;
+                padding: 12px 40px 12px 12px;
+                display: block;
+                background-color: #FFF;
+                background-image: url('../assets/img/admin/bg-select.jpg');
+                background-repeat: no-repeat;
+                background-position: 100% center;
+                background-size: auto 100%;
+                outline: none;
+            }
+        }
+        .sidebar-right{
+            background: #e8e8e8;
+            display: block;
+            width: 100%;
+            min-height: 100vh;
+            padding: 30px;
+            .btn-green{
+                background: #78d415;
+                color: #FFF;
+                font-size: em(18);
+                font-weight: bold;
+                box-shadow: 0px 3px 2px 0px #4d9f00;
+                padding: 15px 0px;
+            }
+        }
+
+        @import "dashboard/main";
+        @import "executive-charter/main";
+        @import "cargo/main";
+        @import "helicopter-charter/main";
+        @import "group-charter/main";
+        @import "meet-greet/main";
+        @import "air-passenger/main";
+        @import "airport-limousine/main";
+        @import "partners/main";
+        @import "posts/main";
+        @import "pages/main";
+        @import "customers/main";
+        @import "empty-leg/main";
+		@import "aircraft-cars/main";
+        @import "private-travel/main";
+        @import "event-group-travel/main";
+        @import "handling-request/main"; 
+		@import "settings/main";     
+		@import "emptyleg-charter/main";
+    }
+}

@@ -1,0 +1,12 @@
+.header-list{
+    background: $yellow;
+    padding: 10px 30px;
+    color: #FFF;
+	border-collapse: inherit !important;
+    width: 100%;
+    .label-table{
+        text-transform: uppercase;
+        font-size: em(14);
+        line-height: 25px;
+    }
+}

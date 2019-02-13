@@ -1,0 +1,55 @@
+.pager-box{
+    display: block;
+    width: 100%;
+    ul {
+        display: block;
+        text-align: center;
+        margin: 20px 0px 0px;
+        padding: 0px;
+        width: 100%;
+        li{
+            @include title($yellow, 16);
+            display: inline-block;
+            margin: 0px 10px;
+            a {
+                color: $purple;
+                &:hover{
+                    color: $yellow;
+                }
+            }
+            &.prev{
+                margin-right: 30px;
+                margin-left: 0px;
+            }
+            &.next {
+                margin-right: 0px;
+                margin-left: 30px;
+            }
+        }
+    }
+}
+.col-centered{
+    float: none;
+    margin-right: -4px;
+    display: inline-block;
+    vertical-align: top;
+    @include breakpoint(mobile){
+        margin-right: 0px;        
+    }
+}    
+.row-centered{
+    text-align: center;    
+}
+
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+.flex-box{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.full-width{
+    width: 100%;
+}

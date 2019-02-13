@@ -1,0 +1,80 @@
+.form-box{
+    display: block;
+    padding: 100px 0px;
+    .box {
+        border-bottom: solid 3px #c29834;
+        .box-left{
+            background: rgba(255, 246, 225, 0.85);
+            padding: 0px;
+            h1{
+                font-family: 'Gotham-book';
+                font-size: 30px;
+                color: #61480e;
+                font-weight: 300;
+                text-transform: uppercase;
+                border-bottom: solid 2px #fff;
+                padding: 20px;
+            }
+            form{
+                padding: 20px;
+                display: block;
+            }
+            .wrapper-btns{
+                margin-top: 61px;                
+            }
+            .btn-yellow {
+                padding: 10px 35px;
+            }
+            .link{
+                color: $purple;
+                margin-top: 10px;
+                display: block;
+                font-size: 12px;
+            }
+			.form-group {
+				position: relative;
+				&.success:after, &.error:after {	
+					right: 7px;
+					top: 13px;		
+				}
+			}
+            .form-control {
+                @include placeholderColor(#61480e);
+                background-color: #fff;
+                font-size: 14px;
+                color: #61480e;
+                padding: 7px 10px;
+                height: auto;
+                border-radius: 0px;                
+            }
+        }
+        .box-right {
+            background: #c29834;
+            padding: 0px;
+            h2{
+                font-family: 'Gotham-book';
+                font-size: 30px;
+                color: #FFF;
+                font-weight: 300;
+                text-transform: uppercase;
+                border-bottom: solid 2px #e8c674;
+                padding: 20px;
+            }
+            ul{
+                list-style: none;
+                padding: 0px 20px;
+                margin: 20px 0px 20px;
+                color: #fff;
+                font-size: 14px;
+                font-family: 'Gotham-book';
+                li{
+                    margin-bottom: 10px;
+                }
+            }
+            .btn-white {
+                padding: 10px 35px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

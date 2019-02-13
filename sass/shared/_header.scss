@@ -1,0 +1,283 @@
+header {
+    display: block;
+    width: 100%;
+    margin: 30px 0px 0px;
+    padding: 0px;
+    position: relative;
+    z-index: 8;
+    @include breakpoint(sm_pc){
+        background: #fff;
+        margin-top: 0px;
+    }
+    .box-top-nav {
+        text-align: right;
+        display: block;
+        padding: 20px 0px;
+        color: #b9b9b9;
+        font-size: 12px;
+        line-height: 22px;
+        .item {
+            display: inline-block;
+            margin-left: 30px;
+            p {
+                margin: 0px;
+                a {
+                    color: #b9b9b9;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+            &:first-child {
+                margin: 0px;
+            }
+        }
+        .social-box {
+            display: inline-block;
+            margin: 0px 0px 0px 20px;
+            ul {
+                padding: 0px;
+                list-style: none;
+                display: block;
+                margin: 0px;
+                li {
+                    display: inline-block;
+                    margin-left: 15px;
+                    font-size: 23px;
+                    position: relative;
+                    top: 5px;
+                    a{
+                        color: #acacac;
+                    }
+                }
+            }
+        }
+        .language-box {
+            display: inline-block;
+            margin-left: 30px;
+            p{
+                margin: 0px;
+                span {
+                    margin-right: 5px;
+                }
+            }
+            ul {
+                display: none;
+            }
+        }
+    }
+    .navbar-accessoslo{
+        background: transparent;
+        color: #FFF;
+        margin-bottom: 0px;
+        border-bottom: solid 3px #080808;
+        font-family: 'Gotham';
+        border-radius: 0px;
+        border: none;
+        .container {
+            position: relative;
+        }
+        .navbar-header {
+            .brand-box {
+                display: inline-block;
+                margin: 0px 15px;
+                max-width: 180px;
+                padding-top: 15px;
+                @include breakpoint(md_pc){
+                    max-width: 130px;
+                    margin-top: 10px;
+                }
+                @include breakpoint(sm_pc){
+                    margin-top: 0px;
+                }
+            }
+            .navbar-toggle {
+                border-color: #000;
+                margin-top: 12px;
+                .icon-bar {
+                    background: #000;
+                }
+            }
+        }
+        #navbar {
+            background: #fff;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            box-shadow: 0px 2px 5px 1px rgba(79, 79, 79, 0.15);
+            @include breakpoint(md_pc){
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+            @include breakpoint(sm_pc){
+                box-shadow: none;
+                padding: 10px 0px;
+            }
+            @include breakpoint(mobile){
+                position: absolute;
+                top: 54px;
+                left: 15px;
+                width: 100%;
+            }
+            .navbar-right{
+                margin-right: 0px;
+                @include breakpoint(tablet){
+                    margin-right: -15px;
+                }
+                li:first-child{                    
+                    @include breakpoint(tablet){
+                        margin-right: 0px;
+                    }
+                    a {
+                      font-size: 12px;                      
+                      text-align: right;
+                      padding: 15px;
+                      text-transform: uppercase;
+                    }					
+					
+                }
+                .btn-yellow {
+                    padding: 10px 25px;
+                    margin: 3px 0px 0px;
+                }
+				.btn-dashboard {
+					font-size: 10px !important;					
+					padding: 8px !important;					
+					margin-top: 6px;
+				}
+            }
+            .box-left {
+                font-size: 12px;
+                margin-top: 5px;
+                @include breakpoint(md_pc){
+                    font-size: 11px
+                }
+                @include breakpoint (sm_pc) {
+                    text-align: center;
+                    font-size: 10px;
+                }
+                @include breakpoint(mobile){
+                    font-size: 20px;
+                }
+                > li {
+                    background: transparent;
+                    position: relative;
+                    @include breakpoint(tablet) {
+                        display: inline-block;
+                    }
+                    @include breakpoint (mobile) {
+                        display: block;
+                    }
+                    ul {
+                      li {
+                        a {
+                          padding: 15px;
+                          font-size: 12px;
+                          color: #48539b;
+                          text-transform: uppercase;
+                          &:hover,&:active, &:focus {
+
+                          }
+                          span {
+                            &.green {
+                                background: #7dc635;
+                                color: #fff;
+                                padding: 3px 5px;
+                                border-radius: 10px;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                    > a {
+                        color: #48539b;
+                        text-transform: uppercase;
+                        padding: 10px 8px;
+                        position: relative;
+                        z-index: 2;
+                        @include breakpoint(md_pc){
+                            padding: 10px 5px;
+                        }
+                        @include breakpoint(sm_pc) {
+                            padding: 20px 10px;
+                        }
+                        @include breakpoint(tablet){
+                            padding: 20px 6px;
+                        }
+                        @include breakpoint(mobile){
+                            padding: 20px 10px;
+                        }
+                        &:hover, &:focus{
+                            background: transparent;
+                        }
+                        span {
+                            color: $yellow;
+                            &.notification{
+                                color: #fff;
+                                padding: 3px 5px;
+                                border-radius: 10px;
+                                &.gold {
+                                    background: $yellow;
+                                }
+                                &.green {
+                                    background: #7dc635;
+                                }
+                                &.red{
+                                    background: #ea3f3f;
+                                }
+                            }
+                        }
+                    }
+                    > ul {
+                        @include breakpoint(mobile){
+                            text-align: center;
+                            font-size: 18px;
+                        }
+                    }
+                    &:hover, &.active{
+                        &:before {
+                            opacity: 1;
+                            top: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* IPAD  toggle menu */
+@include breakpoint(sm_pc){
+    .navbar-header {
+        float: none
+    }
+    .navbar-left {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    /*.navbar-nav
+        float: none!important
+        margin-top: 7.5px
+        > li
+            float: none
+            > a
+                padding-top: 10px
+                padding-bottom: 10px*/
+    .collapse.in{
+        display: block !important;
+    }
+}

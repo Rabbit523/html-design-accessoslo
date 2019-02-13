@@ -1,0 +1,563 @@
+/* ADMIN: meet and greet modal */
+.modal-meet-greet{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 5px;
+            padding: 0px 20px;
+            .modal-header{
+                border-color: #cccccc;
+                position: relative;
+                .close{
+                    position: absolute;
+                    opacity: 1;
+                    text-shadow: none;
+                    right: 5px;
+                    top: 5px;
+                    color: #c9c9c9;
+                    font-size: 30px;
+                    margin: 0px;
+                }
+                .booking-id{
+                    color: $yellow;
+                    font-size: em(18);
+                    font-weight: normal;
+                    font-family: 'Gotham-Book';
+                    margin: 0px;
+                }
+                .company{
+                    color: $purple;
+                    font-size: em(24);
+                    margin: 0px;
+                }
+                .contact-info{
+                    font-size: em(18);
+                    font-weight: normal;
+                    font-family: 'Gotham-Book'; 
+                    color: #000;
+                    margin: 0px;
+                    span{
+                        &:before{
+                            content: "\2022";
+                            color: #c9c9c9;
+                            margin: 0px 20px;
+                        }
+                        &:first-child{
+                            &:before{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .modal-body{
+                padding: 0px;
+                .row-modal{
+                    border-bottom: 1px solid #cccccc;
+                    display: block;
+                    padding: 15px;
+                }
+                h5{
+                    color: #000;
+                    margin: 0px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-family: 'Gotham';
+                    font-weight: normal;
+                    font-size: em(14);    
+                }
+                p{
+                    color: #666666;
+                    font-family: 'Gotham-Book';
+                    font-size: em(14);
+                    margin: 0px;
+                }
+                strong{
+                    color: $yellow;
+                    font-size: em(16);
+                    font-family: 'Gotham';
+                    font-weight: normal;
+                    line-height: 1;
+                }
+            }
+            .modal-footer{
+                padding: 15px;
+                border: none;
+                text-align: left;
+                h5{
+                    color: #000;
+                    margin: 0px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-family: 'Gotham';
+                    font-weight: normal;
+                    font-size: em(14);    
+                }
+                p{
+                    color: #666666;
+                    font-family: 'Gotham-Book';
+                    font-size: em(14);
+                    margin: 0px;
+                }
+                strong{
+                    color: $yellow;
+                    font-size: em(16);
+                    font-family: 'Gotham';
+                    font-weight: normal;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+
+/* ADMIN: airport limousine */
+.modal-airport-limousine{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 5px;
+            padding: 0px 20px;
+            .modal-header{
+                border-color: #cccccc;
+                position: relative;
+                padding: 45px 15px 15px;
+                display: inline-block;
+                width: 100%;
+                .close{
+                    position: absolute;
+                    opacity: 1;
+                    text-shadow: none;
+                    right: 5px;
+                    top: 5px;
+                    color: #c9c9c9;
+                    font-size: 30px;
+                    margin: 0px;
+                }
+                h4{
+                    color: $purple;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-size: em(24);
+                    margin: 0px;
+                    float: left;
+                }
+                .status{
+                    float: right;
+                }
+            }
+            .modal-body{
+                padding: 0px 0px 30px;
+                .row-modal{
+                    display: block;
+                    padding: 15px;
+                }
+                h5{
+                    color: $yellow;
+                    margin: 0px;
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-family: 'Gotham';
+                    font-weight: normal;
+                    font-size: em(14);    
+                }
+                p{
+                    color: #000;
+                    font-family: 'Gotham-Book';
+                    font-size: em(18);
+                    margin: 0px;
+                }
+            }
+        }
+    }
+}
+
+/* ADMIN: Partners */
+.modal-partners{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 5px;
+            padding: 0px 40px;
+            background: #f5f5f5;
+            .modal-header{
+                border-color: #cccccc;
+                position: relative;
+                padding: 45px 0px 15px;
+                display: inline-block;
+                width: 100%;
+                .close{
+                    position: absolute;
+                    opacity: 1;
+                    text-shadow: none;
+                    right: 5px;
+                    top: 5px;
+                    color: #c9c9c9;
+                    font-size: 30px;
+                    margin: 0px;
+                }
+                h4{
+                    color: $purple;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-size: em(34);
+                    margin: 0px;
+                    display: block;
+                }
+                p{
+                    color: $yellow;
+                    text-transform: uppercase;
+                    font-family: 'Gotham-Book';
+                    font-size: em(20);
+                }
+            }
+            .modal-body{
+                padding: 20px 0px 15px;
+                .row-modal{
+                    display: block;
+                    padding: 0px;
+                }
+                .form-group{
+                    > label{
+                        text-transform: uppercase;
+                        font-weight: normal;
+                        color: #0b0f01;
+                        font-family: 'Gotham-Book';
+                        font-size: em(14);
+                    }
+                    .form-control{
+                        font-size: em(16);
+                        color: #7f7f7f;
+                        font-weight: 400;
+                        font-family: 'Gotham';
+                        background: #FFF;
+                        height: auto;
+                        &.date{
+                            background-color: #FFF;
+                            background-image: url('../assets/img/admin/icon-date-white.jpg');
+                            background-repeat: no-repeat;
+                            background-position: 100% center;
+                        }
+                    }
+					input[required]:invalid::after {
+						border: 1px solid #66afe9;
+					}
+                }
+            }
+            .modal-footer{
+                border: none;
+                padding: 0px 0px 20px 0px;
+                .btn{
+                    padding: 15px;
+                    &.btn-green{
+                        background: #6db408;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ADMIN: empty-leg */
+.modal-empty-leg{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 5px;
+            padding: 0px 40px;
+            background: #f5f5f5;
+            .modal-header{
+                border-color: #cccccc;
+                position: relative;
+                padding: 45px 0px 15px;
+                display: inline-block;
+                width: 100%;
+                .close{
+                    position: absolute;
+                    opacity: 1;
+                    text-shadow: none;
+                    right: -25px;
+                    top: 5px;
+                    color: #c9c9c9;
+                    font-size: 30px;
+                    margin: 0px;
+                }
+                h4{
+                    color: $purple;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-size: em(34);
+                    margin: 0px;
+                    display: block;
+                }
+                p{
+                    color: $yellow;
+                    text-transform: uppercase;
+                    font-family: 'Gotham-Book';
+                    font-size: em(20);
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+            }
+            .modal-body{
+                padding: 20px 0px 15px;
+                .row-modal{
+                    display: block;
+                    padding: 0px;
+                }
+                .form-group{
+                    > label{
+                        text-transform: uppercase;
+                        font-weight: normal;
+                        color: #0b0f01;
+                        font-family: 'Gotham-Book';
+                        font-size: em(14);
+                    }
+                    .form-control{
+                        font-size: em(16);
+                        color: #7f7f7f;
+                        font-weight: 400;
+                        font-family: 'Gotham';
+                        background: #FFF;
+                        height: auto;
+                        &.date{
+                            background-color: #FFF;
+                            background-image: url('../assets/img/admin/icon-date-white.jpg');
+                            background-repeat: no-repeat;
+                            background-position: 100% center;
+                            padding-right: 60px;
+                        }
+                    }
+                }
+            }
+            .modal-footer{
+                border: none;
+                padding: 0px 0px 20px 0px;
+                .btn{
+                    padding: 15px;
+                    &.btn-green{
+                        background: #6db408;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ADMIN: aircrafts-cars */
+.modal-aircraft-cars{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 5px;
+            padding: 0px 40px;
+            background: #f5f5f5;
+            .modal-header{
+                border-color: #d2d2d3;
+                position: relative;
+                padding: 45px 0px 15px;
+                display: inline-block;
+                width: 100%;
+                .close{
+                    position: absolute;
+					opacity: 1;
+					text-shadow: none;
+					right: -15px;
+					top: 35px;
+					color: #c9c9c9;
+					font-size: 44px;
+					margin: 0px;
+                }
+                h4{
+                    color: $purple;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-size: em(34);
+                    margin: 0px;
+                    display: block;
+                }
+                p{
+                    color: $yellow;
+                    text-transform: uppercase;
+                    font-family: 'Gotham-Book';
+					font-weight: bold;
+                    font-size: em(20);
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+            }
+            .modal-body{
+                padding: 20px 0px 15px;
+                .row-modal{
+                    display: block;
+                    padding: 0px;
+                }
+                .form-group{
+					&.success:after, &.error:after {	
+						top: 37px;
+						right: 15px;	
+					}
+                    > label{
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        color: #777777;
+                        font-family: 'Gotham-Book';
+                        font-size: em(14);
+                    }
+                    .form-control{
+                        font-size: em(16);
+                        color: #7f7f7f;
+                        font-weight: 400;
+                        font-family: 'Gotham';
+                        background: #FFF;
+                        height: auto;             
+                    }
+                }
+				.upload-image {
+					display: block;
+					margin-bottom: 20px;
+					border:1px solid #aca6a6;
+				}
+				#preview {
+					display: inline-block;
+				}
+				.modal_img {
+					width: 85px;
+					height: 85px;
+					border:1px solid #aca6a6;
+					float: left;
+					margin-right: 23px;
+					text-align: center;
+					.img_src {
+						width: 85px;
+						height: 85px;	
+					}
+					a {
+						display:none;
+					}
+					&:hover{
+						a{
+							display: inline-block;
+						}
+					}
+				}				
+				.style5 {
+					float: right;
+					margin-right:0px;
+				}
+            }
+            .modal-footer{
+                border: none;
+                padding: 0px 0px 20px 0px;
+                .btn{
+                    padding: 15px;
+                    &.btn-green{
+                        background: #6db408;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ADMIN: handling-request */
+.modal-handling-request{
+    .modal-dialog{
+        .modal-content{
+            border-radius: 5px;
+            padding: 0px 40px;
+            background: #f5f5f5;
+            .modal-header{
+                border-color: #cccccc;
+                position: relative;
+                padding: 45px 0px 15px;
+                display: inline-block;
+                width: 100%;
+                .close{
+                    position: absolute;
+                    opacity: 1;
+                    text-shadow: none;
+                    right: 5px;
+                    top: 5px;
+                    color: #c9c9c9;
+                    font-size: 30px;
+                    margin: 0px;
+                }
+                h4{
+                    color: $purple;
+                    font-weight: normal;
+                    text-transform: uppercase;
+                    font-size: em(34);
+                    margin: 0px;
+                    display: block;
+                }
+                p{
+                    color: $yellow;
+                    text-transform: uppercase;
+                    font-family: 'Gotham-Book';
+                    font-size: em(20);
+                    display: inline-block;
+                    margin-right: 15px;
+                }
+            }
+            .modal-body{
+                padding: 20px 0px 15px;
+                .row-modal{
+                    display: block;
+                    padding: 0px;
+                    h5{
+                        color: $yellow;
+                        font-size: em(18);
+                        font-weight: normal;
+                        line-height: 25px;
+                        text-transform: uppercase;
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+                .form-group{
+                    > label{
+                        text-transform: uppercase;
+                        font-weight: normal;
+                        color: #0b0f01;
+                        font-family: 'Gotham-Book';
+                        font-size: em(14);
+                    }
+                    .special{
+                        line-height: 40px;
+                        text-align: center;
+                    }
+                    .special-blocks{
+                        >div{
+                            &:first-child{
+                                padding-right: 0px;
+                            }
+                            &:last-child{
+                                padding-left: 0px;
+                            }
+                        }
+                    }
+                    .form-control{
+                        font-size: em(16);
+                        color: #7f7f7f;
+                        font-weight: 400;
+                        font-family: 'Gotham';
+                        background: #FFF;
+                        height: auto;
+                        &.date{
+                            background-color: #FFF;
+                            background-image: url('../assets/img/admin/icon-date-white.jpg');
+                            background-repeat: no-repeat;
+                            background-position: 100% center;
+                            padding-right: 60px;
+                        }
+                    }					
+                }
+            }
+            .modal-footer{
+                border: none;
+                padding: 0px 0px 20px 0px;
+                .btn{
+                    padding: 15px;
+                    &.btn-green{
+                        background: #6db408;
+                    }
+                }
+            }
+        }
+    }
+}

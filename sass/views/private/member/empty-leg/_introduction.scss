@@ -1,0 +1,89 @@
+.introduction{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 30px 0px 30px;
+    @include breakpoint(sm_pc){
+        margin-top: 0px;
+    }
+    .wrapper-content {        
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 50%;
+        text-align: left;
+        @include breakpoint(sm_pc){
+            top: 30%;
+        }
+        @include breakpoint(mobile){
+            top: 0%;
+        }
+        h1 {
+            font-family: 'Gotham-Book';
+            font-size: 23px;
+			color: #48539b;
+			font-weight: 600;
+            text-transform: uppercase;           
+            @include breakpoint(sm_pc){
+                font-size: 30px;
+            }
+            @include breakpoint(tablet){
+                font-size: 20px;
+            }
+            @include breakpoint(mobile){
+                font-size: 16px;
+            }
+        }
+        p {
+            font-family: 'Gotham-Book';
+            font-size: 14px;
+            font-weight: 600;         
+			@include breakpoint(mobile){
+                font-size: 14px;
+            }
+        }
+		.margin_title {
+			margin-left: 80px;
+		}
+    }
+}
+.introduction_no{
+    display: block;   
+    width: 100%;
+    padding: 0px;
+    margin: 80px 0px 80px;
+    @include breakpoint(sm_pc){
+        margin-top: 0px;
+    }
+    .wrapper-content {      
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 50%;
+        text-align: center;
+        @include breakpoint(sm_pc){
+            top: 30%;
+        }
+        @include breakpoint(mobile){
+            top: 0%;
+        }
+        h1 {
+            font-family: 'Gotham-Book';
+            font-size: 32px;
+			color: #48539b;
+			font-weight: 600;			
+            text-transform: uppercase;           
+            @include breakpoint(sm_pc){
+                font-size: 30px;
+            }
+            @include breakpoint(mobile){
+                font-size: 20px;
+            }
+        }
+        p {
+            font-family: 'Gotham-Book';
+            font-size: 14px;
+			font-weight: 600;                       
+        }		
+    }
+}

@@ -1,0 +1,37 @@
+.accessoslo-helicopter-charter{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        &.booking-id{
+            width: 11%;
+        }
+        &.departure{
+            width: 16%;
+        }
+        &.destination{
+            width: 16%;
+        }
+        &.date{
+            width: 6%;
+        }
+        &.travelers{
+            width: 13%;
+            text-align: center;
+        }
+        &.flight{
+            width: 10%;
+        }
+        &.contact{
+            width: 14%;
+        }
+        &.status{
+            width: 8%;
+        }
+        &.toggle{
+            text-align: center;
+            width: 6%;
+        }
+    }
+}

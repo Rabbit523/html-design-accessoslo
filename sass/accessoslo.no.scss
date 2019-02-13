@@ -1,0 +1,9 @@
+@import "global/main";
+.accessoslo{
+    @import "shared/main";
+    @import "views/public/main";
+    @import "views/private/member/main";
+}
+.accessoslo-admin{
+    @import "views/private/admin/main";
+}

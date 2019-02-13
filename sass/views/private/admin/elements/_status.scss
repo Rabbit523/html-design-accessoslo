@@ -1,0 +1,39 @@
+.status{
+    span{
+        border-radius: 5px;
+        padding: 5px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    &.awaiting{
+        span{
+            background: $yellow;
+        }
+    }
+    &.paid{
+        span{
+            background: $green;
+        }
+    }
+    &.published{
+        span{
+            background: $green;
+        }
+    }
+    &.sent{
+        span{
+            background: #ec7710;
+        }
+    }
+    &.payment-failed{
+        span{
+            background: $red;
+        }
+    }
+    &.not-processed{
+        span{
+            background: $orange;
+        }
+    }
+}

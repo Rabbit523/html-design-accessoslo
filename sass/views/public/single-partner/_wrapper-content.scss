@@ -1,0 +1,249 @@
+.wrapper-content {
+    .features-box {
+        .item {
+            @include shadowBox;
+            display: block;
+            background: #FFF;
+            margin-bottom: 30px;
+            figure{
+                display: block;
+                background: #f1f1f1;
+                padding: 30px 0px;
+            }
+            .info-box {
+                padding: 20px 20px 30px;
+                display: block;
+                text-align: center;
+                h2{
+                    @include title($purple,28);
+                    display: block;
+                    margin: 0px 0px 15px 0px;
+                    @include breakpoint(md_pc){
+                        font-size: 22px;
+                    }
+                    @include breakpoint(sm_pc){
+                        font-size: 16px;
+                    }
+                }
+                p{
+                    color: #5f6062;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    display: block;
+                    width: 70%;
+                    height: 50px;
+                    margin: 0px auto 15px;
+                    @include breakpoint(md_pc){
+                        font-size: 12px;
+                    }
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 30%;
+                        background: #dddddd;
+                        height: 1px;
+                        margin: 10px auto 0px;
+                    }
+                }
+                a {
+                    color: $yellow;
+                    font-size: 12px;
+                }
+            }
+            &.ranking {
+                .info-box {
+                    h2{
+                        color: #38c032;
+                        margin-bottom: 12px;
+                    }
+                    p{
+                        width: 100%;
+                        height: auto;
+                    }
+                    .ranking-box {
+                        color: #fbcf1d;
+                        ul {
+                            padding: 0px;
+                            margin: 0px;
+                            display: block;
+                            li{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .review-box{
+        display: block;
+        margin: 30px 0px 80px;
+        h3{
+            font-family: 'Gotham-book';
+            font-weight: normal;
+            font-size: 26px;
+            color: $yellow;
+            margin: 0px 0px 45px;
+        }
+        .box-left{
+            small{
+                color: #000000;
+                font-family: 'Gotham-Book';
+                font-size: 12px;
+            }
+            .text-top{
+                display: block;
+                color: #c29834;
+                font-family: 'Gotham-Book';
+                font-size: 12px;
+                float: right;
+                margin: 0px;
+            }
+            .submit-btn{
+                .btn{
+                    padding: 12px 30px;
+                    color: #725e0d;
+                    text-transform: inherit;
+                    &:hover{
+                        color: #725e0d !important;
+                    }
+                }
+            }
+            .form-group{
+                margin-bottom: 30px;
+                label {
+                    margin-bottom: 10px;
+                }
+            }
+            .login-box {
+                .form-control {
+                    @include placeholderColor(#725e0d);
+                }
+                .btn{
+                    padding: 7px 12px;
+                }
+                [class^="col-"] {
+                    padding-left: 0px;
+                    &:nth-child(2), &:first-child{
+                        padding-left: 15px;
+                    }
+                }
+            }
+            .total-ranking{
+                .ranking-box{
+                    @include ranking(28);
+                    display: inline-block;              
+                }
+            }
+            .checkbox  {
+                font-size: 12px;
+                font-family: 'Gotham-book';
+            }
+            .list-items-rankings {
+                border: #e0e0e0 solid 1px;
+                .item {
+                    background: #fff;
+                    display: block;
+                    padding: 15px;
+                    border-bottom: #e0e0e0 solid 1px;
+                    &:last-child {
+                        border-bottom: none;
+                    }
+                    p{
+                        font-family: 'Gotham-book';
+                        font-size: 14px;
+                        margin: 0px;
+                    }
+                    .ranking-box {
+                        @include ranking(16);
+                        display: inline-block;
+                    }
+                    .clickReview{
+                        top: 0px;
+                    }
+                }
+            }
+            .clickReview {
+                background: #fbcf1d;
+                color: #735f0d;
+                font-size: 12px;
+                font-weight: bold;
+                display: inline-block;
+                text-align: center;
+                padding: 7px 10px;
+                position: relative;
+                line-height: 1;
+                margin-left: 30px;
+                top: -6px;
+                &:before{
+                    content:'';
+                    display: block;
+                    margin: 0 auto;
+                    width: 0;
+                    height: 0;
+                    border-color: transparent #fbcf1d transparent transparent;
+                    border-style: solid;
+                    border-width: 13px;
+                    position: absolute;
+                    top: 0px;
+                    left: -26px;
+                }
+            }
+        }
+        .box-right{
+            .box {
+                @include shadowBox;
+                display: block;
+                background: #FFF;
+                margin: 0px 0px 45px;
+                padding: 20px;
+                .header-box {
+                    figure {
+                        display: block;
+                        width: 50px;
+                        float: left;
+                        margin-right: 10px;
+                    }
+                    div {
+                        p {
+                            font-family: 'Gotham-book';
+                            font-size: 12px;
+                            color: #5f6062;
+                            display: inline;
+                        }
+                        h5{
+                            font-style: italic;
+                            font-size: 15px;
+							margin-top: 4px;
+                        }
+						label {
+							vertical-align: top;
+						}
+                        .ranking-box {
+                            display: inline-block;
+                            ul {
+                                padding: 0px;
+                                color: #fbcf1d;                            
+                                margin: 0px;
+                                display: block;
+                                li{
+                                    display: inline-block;
+                                }
+                            }
+                        }
+                    }
+                }
+                .info-content {
+                    display: block;
+                    margin: 20px 0px 0px 0px;
+                    p{
+                        font-family: 'Gotham-book';
+                        font-size: 12px;
+                        color: #5f6062;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

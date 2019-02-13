@@ -1,0 +1,42 @@
+.introduction{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 30px 0px 30px;
+    @include breakpoint(sm_pc){
+        margin-top: 0px;
+    }
+    .wrapper-content {
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        top: 50%;
+        text-align: left;
+        @include breakpoint(sm_pc){
+            top: 30%;
+        }
+        @include breakpoint(mobile){
+            top: 0%;
+        }
+        h1 {
+            font-family: 'Gotham-Book';
+            font-size: 23px;
+			color: #48539b;
+			font-weight: 600;
+			margin-left: 80px;
+            text-transform: uppercase;
+            @include breakpoint(sm_pc){
+                font-size: 30px;
+            }
+            @include breakpoint(mobile){
+                font-size: 20px;
+            }
+        }
+        p {
+            font-family: 'Gotham-Book';
+            font-size: 18px;
+            font-weight: normal;
+            color: #fff;
+        }
+    }
+}

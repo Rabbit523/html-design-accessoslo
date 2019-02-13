@@ -1,0 +1,32 @@
+.accessoslo-customers{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        &.member-since{
+            width: 15%;
+        }
+        &.title{
+            width: 9%;
+        }
+        &.first-name{
+            width: 16%;
+        }
+        &.last-name{
+            width: 17%;
+        }
+        &.email{
+            width: 19%;
+        }
+        &.phone{
+            width: 14%;
+        }
+        &.action{
+            width: 10%;
+            text-align: right;
+        }
+    }
+}

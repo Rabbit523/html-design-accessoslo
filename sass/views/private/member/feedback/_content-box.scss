@@ -1,0 +1,81 @@
+.content-box{
+    display: block;
+    margin: 0px 0px 0px;
+    padding-bottom: 50px;
+    position: relative;
+    top: -80px;
+    @include breakpoint(mobile){
+        top: 0px;
+        margin-top: 30px;
+    }
+    .general-box{
+        @include shadowBox();
+        background: #FFF;
+        padding: 20px;
+        small{
+            @include title(#c0c0c0,12);
+        }
+        h2 {
+            @include title($yellow, 16);
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        select {
+            background-image: url('../assets/img/arrow-select-yellow.jpg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: auto 100%;
+        }
+        .form-control {
+            @include placeholderColor(#333333);
+            background-color: #FFF;
+            font-size: 14px;
+            color: #333333;
+            padding: 7px 10px;
+            height: auto;
+        }
+        .box-right{
+            p{
+                @include title(#333333, 12);
+                text-transform: uppercase;
+                sup{
+                    color: #de0000;
+                }
+            }
+            .wrapper-radios{
+                margin-bottom: 30px;
+                .radio{
+                    display: block;
+                    width: 20%;
+                    margin: 0px;
+                    float: left;
+                    text-align: center;
+                    @extend .radioCustom;
+                }
+            }
+        }
+        .box-full-1{
+            margin-top: 30px;
+            .wrapper-radios{
+                margin-bottom: 30px;
+                .radio{
+                    display: block;
+                    width: 10%;
+                    margin: 0px;
+                    float: left;
+                    text-align: center;
+                    @extend .radioCustom;
+                    .check{
+                        left: 32px;
+                    }
+                }
+            }
+        }
+        .box-right-3{
+            .btn{
+                padding: 11px 12px;
+                margin-top: 47px;            
+            }
+        }
+    }
+}

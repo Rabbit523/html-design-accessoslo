@@ -1,0 +1,66 @@
+.content-box{
+    display: block;
+    margin: 50px 0px 0px;
+    padding-bottom: 50px;
+    .gold-link {
+        color: $yellow;
+        font-size: 18px;
+    }
+    .map-box{
+        display: block;
+        box-shadow: 0px 0px 15px 0px rgba(61, 47, 12, 0.15);
+        margin: 0px 0px 50px 0px;
+    }
+    .item {
+        display: block;
+        margin-bottom: 50px;
+        .header-box {
+            display: block;
+            box-shadow: 0px 0px 15px 0px rgba(61, 47, 12, 0.15);
+            background: #FFF;
+            h3 {
+                color: $purple;
+                font-family: 'Gotham';
+                font-weight: normal;
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 30px 0px;
+                margin: 0px;
+                display: block;
+            }        
+        }
+        .icon-box {
+            display: block;
+            background: #f1f1f1;
+        }
+        .info-box {
+            display: block;
+            box-shadow: 0px 0px 15px 0px rgba(61, 47, 12, 0.15);
+            background: #FFF;
+            padding: 30px 30px 60px;
+            p{
+                font-size: 12px;
+                font-family: 'Gotham-Book';
+                line-height: 24px;
+            }
+            b {
+                font-family: 'Gotham';
+            }
+            h4{
+                font-family: 'Gotham';
+                font-size: 14px;
+                font-weight: normal;
+                color: $purple;
+                margin: 40px 0px 10px 0px;
+            }
+            a {
+                color: $yellow;
+                font-size: 12px;
+                margin: 20px 0px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

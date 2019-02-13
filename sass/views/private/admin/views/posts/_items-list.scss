@@ -1,0 +1,52 @@
+.items-list{
+    display: block;
+    .item{
+        background: white;
+        color: #333333;
+        padding: 20px 30px;
+        margin-bottom: 20px;
+        .title{
+            a{
+                display: inline;
+                font-size: em(16);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.3s ease-out;
+                -moz-transition: all 0.3s ease-out;
+                -webkit-transition: all 0.3s ease-out;
+                -o-transition: all 0.3s ease-out;
+                &:after{
+                    content: "\2022";
+                    color: #c6c6c6;
+                    display: inline;
+                    margin: 0px 5px;
+                }
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:first-child{
+                    margin-left: 10px;
+                }
+                &:hover{
+                    text-decoration: none;
+                }
+                &.edit{
+                    color: $purple
+                }
+                &.delete{
+                    color: $red;
+                }
+            }
+        }
+        &:hover{
+            .title{
+                a{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}

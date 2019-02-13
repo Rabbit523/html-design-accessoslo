@@ -1,0 +1,26 @@
+.accessoslo-posts{
+    @import "header-list";
+    @import "items-list";
+    .label-table{
+        display: block;
+        float: left;
+        font-size: em(14);
+        line-height: 25px;
+        &.title{
+            width: 33%;
+        }
+        &.author{
+            width: 22%;
+        }
+        &.published{
+            width: 17%;
+        }
+        &.updated{
+            width: 17%;
+        }
+        &.status{
+            width: 11%;
+            text-align: right;
+        }
+    }
+}
